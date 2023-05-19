@@ -19,12 +19,15 @@ for (let num = 1; num<= 100; num++) {
     //EFETTUO IL CONTROLLO
     if (num % 15 === 0) {
         li.innerHTML = 'FizzBuzz';
+        li.classList.add('red');
 
     }else if (num % 3 === 0) {
         li.innerHTML = 'Fizz';
+        li.classList.add('green');
 
     }else if (num % 5 === 0) {
         li.innerHTML = 'Buzz';
+        li.classList.add('yellow');
     }
 }
 

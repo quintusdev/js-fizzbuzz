@@ -1,31 +1,28 @@
 //DICHIARAZIONE VARIABILI
-
-const lista = document.getElementById('lista');
-const output = document.createElement('output');
-
+"use strict";
+//ASSEGNO ELEMENTO UL DAL DOM
+const lista = document.querySelector('ul');
+//CICLO FOR
 for (let num = 1; num<= 100; num++) {
-
+    //CREO UN NUOVO LI OGNI VOLTA CHE ENTRO NEL CICLO
+    const li = document.createElement('li');
+    //ASSEGNO AD LI LA VARIABILE NUM
+    li.append(num);
+    //ASSEGNO A LISTA LA VARIABILE LI
+    lista.append(li);
+    //EFETTUO IL CONTROLLO
     if (num % 15 === 0) {
-        let num = 'FizzBuzz';
-        output.append(num);
-        lista.innerHTML += `<li>${num}</li>`;
+        li.innerHTML = 'FizzBuzz';
 
     }else if (num % 3 === 0) {
-        let num = 'Fizz';
-        output.append(num);
-        lista.innerHTML += `<li>${num}</li>`;
+        li.innerHTML = 'Fizz';
 
     }else if (num % 5 === 0) {
-        let num = 'Buzz'; 
-        output.append(num);
-        lista.innerHTML += `<li>${num}</li>`;
-
-    } else {
-        output.append(num);
-        lista.innerHTML += `<li>${num}</li>`;
+        li.innerHTML = 'Buzz';
     }
 
-    
 }
+
+    
 
 

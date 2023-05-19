@@ -12,3 +12,6 @@ PROBLEMA: Scrivi un programma che stampi in console i numeri da 1 a 100, ma che 
 
 
 BONUS 1 - Crea un container nel DOM , aggiungendo (attraverso la funzione append()) un elemento html con il numero o la stringa corretta da mostrare.
+
+1 - CREO NEL DOM UN CONTAINER VUOTO;
+2 - VISUALIZZO TUTTI I RISULTATI OTTENUTI PER OGNI NUMERO;
